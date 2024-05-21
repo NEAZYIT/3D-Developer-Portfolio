@@ -1,68 +1,213 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/**
+ * Import the Google Fonts stylesheet for the "Poppins" font family with various font weights.
+ * The imported stylesheet is located at "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap".
+ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/**
+ * This code includes the necessary imports for using Tailwind CSS.
+ * 
+ * @tailwind base - This import includes the base styles provided by Tailwind CSS.
+ * @tailwind components - This import includes the pre-styled components provided by Tailwind CSS.
+ * @tailwind utilities - This import includes the utility classes provided by Tailwind CSS.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+/* Universal styles applied to all elements */
+* {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  font-family: "Poppins", sans-serif; /* Set default font to "Poppins", fallback to sans-serif */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  color-scheme: dark; /* Optimize for dark mode */
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Custom class for spacing adjustment */
+.hash-span {
+  margin-top: -100px; /* Adjust top margin for spacing */
+  padding-bottom: 100px; /* Add padding at the bottom */
+  display: block; /* Display element as a block */
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Black gradient background class */
+.black-gradient {
+  background: #000000; /* Fallback solid black background */
+  background: -webkit-linear-gradient(to right, #434343, #000000); /* Gradient for older browsers */
+  background: linear-gradient(to right, #434343, #000000); /* Gradient for modern browsers */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+
+/* Violet gradient background class */
+.violet-gradient {
+  background: #804dee; /* Fallback solid violet background */
+  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%); /* Gradient from violet to transparent */
+  background: -webkit-linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%); /* Gradient for older browsers */
+}
+
+/* Green to pink gradient background class */
+.green-pink-gradient {
+  background: "#00cea8"; /* Fallback solid green background */
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%); /* Gradient from green to pink */
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%); /* Gradient for older browsers */
+}
+
+/* Orange text gradient class */
+.orange-text-gradient {
+  background: #f12711; /* Fallback solid orange background */
+  background: -webkit-linear-gradient(to top, #f12711, #f5af19); /* Gradient for older browsers */
+  background: linear-gradient(to top, #f12711, #f5af19); /* Gradient for modern browsers */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+}
+
+/* Green text gradient class */
+.green-text-gradient {
+  background: #11998e; /* Fallback solid green background */
+  background: -webkit-linear-gradient(to top, #11998e, #38ef7d); /* Gradient for older browsers */
+  background: linear-gradient(to top, #11998e, #38ef7d); /* Gradient for modern browsers */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+}
+
+/* Blue text gradient class */
+.blue-text-gradient {
+  background: #56ccf2; /* Fallback solid blue background */
+  background: -webkit-linear-gradient(to top, #2f80ed, #56ccf2); /* Gradient for older browsers */
+  background: linear-gradient(to top, #2f80ed, #56ccf2); /* Gradient for modern browsers */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+}
+
+/* Pink text gradient class */
+.pink-text-gradient {
+  background: #ec008c; /* Fallback solid pink background */
+  background: -webkit-linear-gradient(to top, #ec008c, #fc6767); /* Gradient for older browsers */
+  background: linear-gradient(to top, #ec008c, #fc6767); /* Gradient for modern browsers */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+}
+
+/* Canvas loader animation class */
+.canvas-loader {
+  font-size: 10px; /* Set font size (used for element size) */
+  width: 1em; /* Set width to 1em (relative to font size) */
+  height: 1em; /* Set height to 1em (relative to font size) */
+  border-radius: 50%; /* Make the element circular */
+  position: relative; /* Position relative to its normal position */
+  text-indent: -9999em; /* Move text far off-screen to hide it */
+  animation: mulShdSpin 1.1s infinite ease; /* Apply spin animation */
+  transform: translateZ(0); /* Improve animation performance */
+}
+
+/* Keyframes for the mulShdSpin animation */
+@keyframes mulShdSpin {
+  /* At 0% and 100% of the animation */
+  0%, 100% {
+    /* Define multiple box-shadows for the loader's circle */
+    box-shadow: 
+      0em -2.6em 0em 0em #ffffff, /* Top position, white */
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), /* Top-right, light shadow */
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2), /* Right, light shadow */
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), /* Bottom-right, light shadow */
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2), /* Bottom, light shadow */
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), /* Bottom-left, light shadow */
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.5), /* Left, medium shadow */
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7); /* Top-left, dark shadow */
   }
-  a:hover {
-    color: #747bff;
+
+  /* At 12.5% of the animation */
+  12.5% {
+    box-shadow: 
+      0em -2.6em 0em 0em rgba(255, 255, 255, 0.7), /* Top position, dark shadow */
+      1.8em -1.8em 0 0em #ffffff, /* Top-right, white */
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2), /* Right, light shadow */
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), /* Bottom-right, light shadow */
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2), /* Bottom, light shadow */
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), /* Bottom-left, light shadow */
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), /* Left, light shadow */
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5); /* Top-left, medium shadow */
   }
-  button {
-    background-color: #f9f9f9;
+
+  /* At 25% of the animation */
+  25% {
+    box-shadow: 
+      0em -2.6em 0em 0em rgba(255, 255, 255, 0.5), /* Top position, medium shadow */
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7), /* Top-right, dark shadow */
+      2.5em 0em 0 0em #ffffff, /* Right, white */
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), /* Bottom-right, light shadow */
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2), /* Bottom, light shadow */
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), /* Bottom-left, light shadow */
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), /* Left, light shadow */
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2); /* Top-left, light shadow */
+  }
+
+  /* At 37.5% of the animation */
+  37.5% {
+    box-shadow: 
+      0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), /* Top position, light shadow */
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5), /* Top-right, medium shadow */
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.7), /* Right, dark shadow */
+      1.75em 1.75em 0 0em #ffffff, /* Bottom-right, white */
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2), /* Bottom, light shadow */
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), /* Bottom-left, light shadow */
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), /* Left, light shadow */
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2); /* Top-left, light shadow */
+  }
+
+  /* At 50% of the animation */
+  50% {
+    box-shadow: 
+      0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), /* Top position, light shadow */
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), /* Top-right, light shadow */
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.5), /* Right, medium shadow */
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.7), /* Bottom-right, dark shadow */
+      0em 2.5em 0 0em #ffffff, /* Bottom, white */
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), /* Bottom-left, light shadow */
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), /* Left, light shadow */
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2); /* Top-left, light shadow */
+  }
+
+  /* At 62.5% of the animation */
+  62.5% {
+    box-shadow: 
+      0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), /* Top position, light shadow */
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), /* Top-right, light shadow */
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2), /* Right, light shadow */
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.5), /* Bottom-right, medium shadow */
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.7), /* Bottom, dark shadow */
+      -1.8em 1.8em 0 0em #ffffff, /* Bottom-left, white */
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), /* Left, light shadow */
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2); /* Top-left, light shadow */
+  }
+
+  /* At 75% of the animation */
+  75% {
+    box-shadow: 
+      0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), /* Top position, light shadow */
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), /* Top-right, light shadow */
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2), /* Right, light shadow */
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), /* Bottom-right, light shadow */
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.5), /* Bottom, medium shadow */
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.7), /* Bottom-left, dark shadow */
+      -2.6em 0em 0 0em #ffffff, /* Left, white */
+      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2); /* Top-left, light shadow */
+  }
+
+  /* At 87.5% of the animation */
+  87.5% {
+    box-shadow: 
+      0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), /* Top position, light shadow */
+      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), /* Top-right, light shadow */
+      2.5em 0em 0 0em rgba(255, 255, 255, 0.2), /* Right, light shadow */
+      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), /* Bottom-right, light shadow */
+      0em 2.5em 0 0em rgba(255, 255, 255, 0.2), /* Bottom, light shadow */
+      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5), /* Bottom-left, medium shadow */
+      -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), /* Left, dark shadow */
+      -1.8em -1.8em 0 0em #ffffff; /* Top-left, white */
   }
 }
