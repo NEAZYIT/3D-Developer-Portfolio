@@ -14,7 +14,7 @@ This document provides a comprehensive overview of the development process for a
 
 ---
 
-### Day 1: Project Setup and Tooling
+### Day 1: Project Setup and Tooling <a id="day-1-project-setup-and-tooling"></a>
 
 **1. Project Initialization with Vite**
 
@@ -63,7 +63,7 @@ npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-
 
 ---
 
-### Day 2: Content and Routing
+### Day 2: Content, Routing, and Integration <a id="day-2-content-routing-and-integration"></a>
 
 **1. Create Constants**
 
@@ -96,7 +96,7 @@ npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-
 
 ---
 
-### Day 3: Dynamic Navbar and Responsiveness
+### Day 3: Dynamic Navbar & Responsiveness <a id="day-3-dynamic-navbar--responsiveness"></a>
 
 **1. Dynamic Navbar Links**
 
@@ -114,6 +114,6 @@ npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-
 
 ---
 
-### Day 4:  [Add Day 4 Content Here]
+### Day 4: [Add Day 4 Content Here] <a id="day-4"></a>
 
--  [Continue documenting the remaining tasks in this structured format] 
+**(Add your Day 4 content here when ready)** 
