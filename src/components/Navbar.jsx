@@ -31,10 +31,10 @@ const Navbar = () => {
             window.scrollTo(0, 0); // Scrolls to the top of the page when the logo is clicked.
           }}
         >
-          <img src={logo} alt='logo' className="w-35 h-10 object-contain" /> {/* Displays the website logo with a width and height of 9px, contained within its bounds. */}
-          <p className="text-white text-[18px] font-bold cursor-pointer">
-            NAZIH <span className="sm-block hidden">| DEVNET</span>
-          </p> {/* Displays the website name with white text, 18px font size, bold font weight, and a cursor that changes to a pointer on hover. */}
+          <img src={logo} alt='logo' className="w-35 h-6 object-contain" /> {/* Displays the website logo with a width of 35px and height of 6px, contained within its bounds. */}
+          <p className="text-white text-[14px] font-neo cursor-pointer flex"> {/* This paragraph represents the website name and logo in the header section. */}
+            NAZIH &nbsp; <span className="sm:inline hidden"> | DEVNET</span> {/* It combines the website name "NAZIH" with the branding element "| DEVNET" separated by a space and The title is hidden on small screens and visible on normal and large screens.*/}
+          </p> {/* Displays the website name with white text, 14px font size, neo font weight, and a cursor that changes to a pointer on hover. */}
         </Link>
 
         {/* 
