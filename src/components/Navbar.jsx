@@ -35,6 +35,36 @@ const Navbar = () => {
           </p> {/* Displays the website name with white text, 18px font size, bold font weight, and a cursor that changes to a pointer on hover. */}
         </Link>
 
+        {/* 
+            This code generates a navigation menu with links based on the contents of the 'navLinks' array.
+            Each link has different styles depending on whether it's active or not, and it includes hover effects for interactivity.
+        */}
+
+        {/*
+            This line creates an unordered list (UL element) to hold navigation links.
+            It applies the following CSS classes:
+            - 'list-none': Removes default list styling (bullet points).
+            - 'hidden': Hides the list by default.
+            - 'sm:flex': Displays the list as a flex container when the screen size meets the 'sm' breakpoint.
+            - 'flex-row': Sets the direction of flex items to be horizontal.
+            - 'gap-10': Sets the gap between flex items to be 10 units.
+        */}
+        <ul className="list-none hidden sm:flex flex-row gap-10">
+          {/* 
+            Iterate over each 'link' in the 'navLinks' array to create list items dynamically.
+          */}
+          {navLinks.map((link) => (
+            <li
+              key={link.id} // Unique key for efficient list rendering
+              className={`${active === link.title ? "text-white" : "text-secondary" // Set text color based on whether the link is active
+                } hover:text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink-500 hover:to-blue-500 hover:scale-110 hover:rotate-3 transition-transform duration-300 text-[18px] font-medium cursor-pointer`}
+            >
+              <a href={`#${link.id}`}>{link.title}</a> {/* Link to specific section on the page */}
+            </li>
+          ))}
+        </ul>
+
+
       </div>
     </nav>
   )
