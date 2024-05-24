@@ -105,7 +105,7 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <li
                   key={link.id} // Unique key for efficient list rendering
-                  className={`${active === link.title ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer tet-[16px] transition duration-300 transform hover:scale-105 hover:rotate-2`} // Dynamically sets text color based on active state and applies styles for link animations
+                  className={`${active === link.title ? "text-white-500" : "text-secondary"} font-poppins font-medium cursor-pointer tet-[16px] transition duration-300 transform hover:scale-105 hover:rotate-2`} // Dynamically sets text color based on active state and applies styles for link animations
                   onClick={() => {
                     setToggle(!toggle); // Toggles the mobile menu when a link is clicked
                     setActive(link.title); // Sets the active link to the title of the link when clicked
