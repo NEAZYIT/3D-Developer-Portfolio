@@ -91,7 +91,7 @@ const Navbar = () => {
             This div contains the mobile menu items and appears or disappears based on 'toggle'.
             It has a gradient background, rounded corners, and a shadow for visual appeal.
           */}
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-2 hover:text-transparen bg-gradient-to-r from-blue-900 to-pink-950 absolute right-0 top-20 mx-4 my-2 min-w-[200px] shadow-lg rounded-lg z-10 transition-transform duration-300 ease-in-out transform`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-4 bg-gradient-to-r from-blue-900 to-pink-950 absolute right-0 top-20 mx-4 my-2 min-w-[200px] shadow-lg rounded-lg z-10 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-x`}>
 
             {/* 
               This ul represents the list of navigation links inside the mobile menu.
