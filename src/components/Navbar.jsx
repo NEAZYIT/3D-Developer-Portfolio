@@ -59,7 +59,7 @@ const Navbar = () => {
             <li
               key={link.id} // Unique key for efficient list rendering
               className={`${active === link.title ? "text-white" : "text-secondary" // Set text color based on whether the link is active
-                } hover:text-white hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink-500 hover:to-blue-500 hover:scale-110 hover:rotate-3 transition-transform duration-300 text-[18px] font-medium cursor-pointer`}
+                }  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-pink-500 hover:to-blue-500 hover:scale-110 hover:rotate-3 transition-transform duration-300 text-[18px] font-medium cursor-pointer`}
               onClick={() => {
                 setActive(link.title); // Sets the active link to the title of the link when the link is clicked.
                 window.scrollTo(0, 0); // Scrolls to the top of the page when the link is clicked.
@@ -91,7 +91,7 @@ const Navbar = () => {
             This div contains the mobile menu items and appears or disappears based on 'toggle'.
             It has a gradient background, rounded corners, and a shadow for visual appeal.
           */}
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-2 bg-gradient-to-br from-blue-900 to-pink-900 absolute right-0 top-20 mx-4 my-2 min-w-[200px] shadow-lg rounded-lg z-10 transition-transform duration-300 ease-in-out transform`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-2 hover:text-transparen bg-gradient-to-r from-blue-900 to-pink-950 absolute right-0 top-20 mx-4 my-2 min-w-[200px] shadow-lg rounded-lg z-10 transition-transform duration-300 ease-in-out transform`}>
 
             {/* 
               This ul represents the list of navigation links inside the mobile menu.
