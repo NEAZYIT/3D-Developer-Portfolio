@@ -4,13 +4,13 @@ This document provides a comprehensive overview of the development process for a
 
 **Table of Contents**
 
-|                     Day                     | Description                                 |
-| :-----------------------------------------: | :------------------------------------------ |
-|    [1](#day-1-project-setup-and-tooling)    | Project Setup and Tooling                   |
-| [2](#day-2-content-routing-and-integration) | Content, Routing, and Integration           |
-| [3](#day-3-dynamic-navbar--responsiveness)  | Dynamic Navbar & Responsiveness             |
-|       [4](#day-4-tailwind-css-fixes)        | Tailwind CSS Fixes and Hero Section Styling |
-|                     ...                     | ...                                         |
+|                     Day                     | Description                                                  |
+| :-----------------------------------------: | :----------------------------------------------------------- |
+|    [1](#day-1-project-setup-and-tooling)    | Project Setup and Tooling                                    |
+| [2](#day-2-content-routing-and-integration) | Content, Routing, and Integration                            |
+| [3](#day-3-dynamic-navbar--responsiveness)  | Dynamic Navbar & Responsiveness                              |
+|       [4](#day-4-tailwind-css-fixes)        | Tailwind CSS Fixes and Hero Section Styling and Hero Section |
+|                     ...                     | ...                                                          |
 
 ---
 
