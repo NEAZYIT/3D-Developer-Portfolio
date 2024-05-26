@@ -4,13 +4,13 @@ This document provides a comprehensive overview of the development process for a
 
 **Table of Contents**
 
-| Day | Description                     |
-| :--: | :------------------------------ |
-|  [1](#day-1-project-setup-and-tooling)  | Project Setup and Tooling        |
-|  [2](#day-2-content-routing-and-integration)  | Content, Routing, and Integration |
-|  [3](#day-3-dynamic-navbar--responsiveness)  | Dynamic Navbar & Responsiveness  |
-|  [4](#day-4)  | [Add Day 4 Content Here]       | 
-| ... | ...                              |
+|                     Day                     | Description                       |
+| :-----------------------------------------: | :-------------------------------- |
+|    [1](#day-1-project-setup-and-tooling)    | Project Setup and Tooling         |
+| [2](#day-2-content-routing-and-integration) | Content, Routing, and Integration |
+| [3](#day-3-dynamic-navbar--responsiveness)  | Dynamic Navbar & Responsiveness   |
+|       [4](#day-4-tailwind-css-fixes)        | Tailwind CSS Fixes                |
+|                     ...                     | ...                               |
 
 ---
 
@@ -114,6 +114,9 @@ npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-
 
 ---
 
-### Day 4: [Add Day 4 Content Here] <a id="day-4"></a>
+### Day 4: Tailwind CSS Fixes <a id="day-4-tailwind-css-fixes"></a>
 
-**(Add your Day 4 content here when ready)** 
+**1. Navbar Color Issue**
+
+- **Problem:** The navbar links were not displaying the expected color gradient because of the presence of `white-text` in the Tailwind CSS classes.
+- **Solution:** I removed the `white-text` class, allowing the `hover:from-pink-500 hover:to-blue-500` gradient to apply correctly.
