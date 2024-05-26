@@ -4,13 +4,13 @@ This document provides a comprehensive overview of the development process for a
 
 **Table of Contents**
 
-|                     Day                     | Description                       |
-| :-----------------------------------------: | :-------------------------------- |
-|    [1](#day-1-project-setup-and-tooling)    | Project Setup and Tooling         |
-| [2](#day-2-content-routing-and-integration) | Content, Routing, and Integration |
-| [3](#day-3-dynamic-navbar--responsiveness)  | Dynamic Navbar & Responsiveness   |
-|       [4](#day-4-tailwind-css-fixes)        | Tailwind CSS Fixes                |
-|                     ...                     | ...                               |
+|                     Day                     | Description                                 |
+| :-----------------------------------------: | :------------------------------------------ |
+|    [1](#day-1-project-setup-and-tooling)    | Project Setup and Tooling                   |
+| [2](#day-2-content-routing-and-integration) | Content, Routing, and Integration           |
+| [3](#day-3-dynamic-navbar--responsiveness)  | Dynamic Navbar & Responsiveness             |
+|       [4](#day-4-tailwind-css-fixes)        | Tailwind CSS Fixes and Hero Section Styling |
+|                     ...                     | ...                                         |
 
 ---
 
@@ -114,9 +114,27 @@ npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-
 
 ---
 
-### Day 4: Tailwind CSS Fixes <a id="day-4-tailwind-css-fixes"></a>
+### Day 4: Tailwind CSS Fixes and Hero Section Styling <a id="day-4-tailwind-css-fixes"></a>
 
 **1. Navbar Color Issue**
 
 - **Problem:** The navbar links were not displaying the expected color gradient because of the presence of `white-text` in the Tailwind CSS classes.
 - **Solution:** I removed the `white-text` class, allowing the `hover:from-pink-500 hover:to-blue-500` gradient to apply correctly.
+
+**2. Hero Section Structure and Styling** 
+
+- **Component Breakdown:** I implemented the `Hero` component, which is the main visual element users see at the top of the portfolio website. The component is structured with:
+    - A main `<section>` container for the entire hero area.
+    - A `<div>` with Tailwind CSS classes for padding, positioning, width, and flexbox layout to control the arrangement of content.
+    - A `<div>` for the decorative small circle and vertical gradient line.
+    - A `<div>` containing the main heading (`<h1>`) and a paragraph (`<p>`) with the tagline.
+    - The `ComputersCanvas` component (likely responsible for the 3D visuals).
+
+- **Styling with Tailwind CSS:** I used Tailwind CSS classes extensively to:
+    - Apply padding, margins, colors, and background colors.
+    - Control the layout of elements using flexbox.
+    - Set the maximum width of the container for responsiveness.
+    - Add hover effects and smooth transitions to the "NEAZYIT" text in the heading. 
+
+- **Importing Styles and Components:** The code imports the necessary styling from `../styles` and the `ComputersCanvas` component from `./canvas`.
+---
