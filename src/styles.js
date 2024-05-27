@@ -52,13 +52,13 @@ const styles = {
    * - `text-[#dfd9ff]`: Sets the text color to a light purple.
    * - `font-medium`: Uses a medium font weight.
    * - `lg:text-[30px]`: Sets the text size to 30 pixels for large screens.
-   * - `sm:text-[26px]`: Sets the text size to 26 pixels for medium screens.
+   * - `sm:text-[20px]`: Sets the text size to 20 pixels for medium screens.
    * - `xs:text-[20px]`: Sets the text size to 20 pixels for small screens.
    * - `text-[16px]`: Sets the text size to 16 pixels for extra small screens.
    * - `lg:leading-[40px]`: Sets the line height to 40 pixels for large screens.
    */
   heroSubText:
-    "text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
+    "text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[20px] xs:text-[20px] text-[16px] lg:leading-[40px]",
 
   /**
    * Styles for headings in other sections of your website.

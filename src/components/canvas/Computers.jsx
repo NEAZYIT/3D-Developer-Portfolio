@@ -12,10 +12,11 @@ const Computers = ({ isMobile }) => {
   const { scene } = useGLTF("/desktop_pc/scene.gltf"); // Load the 3D model from a file. 
 
   return (
-    <mesh> // Create a container for all the elements in our scene.
+    // Create a container for all the elements in our scene.
+    <mesh>
 
       {/* Add a soft, general light to the scene. */}
-      <hemisphereLight intensity={0.15} groundColor="black" />
+      <hemisphereLight intensity={3.15} groundColor="black" />
 
       {/* Add a focused spotlight to the scene. */}
       <spotLight
@@ -33,8 +34,8 @@ const Computers = ({ isMobile }) => {
       {/* Render the 3D computer model in the scene. */}
       <primitive
         object={scene}             // Use the loaded model from the file.
-        scale={isMobile ? 0.7 : 0.75} // Adjust the size based on phone or computer.
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]} // Place the model at these coordinates.
+        scale={isMobile ? 0.46 : 0.65} // Adjust the size based on phone or computer.
+        position={isMobile ? [0, -4, -1] : [0, -3.25, -1.5]} // Place the model at these coordinates.
         rotation={[-0.01, -0.2, -0.1]} // Slightly rotate the model. 
       />
     </mesh>
@@ -50,7 +51,7 @@ const ComputersCanvas = () => {
 
   // Check if we're on a phone or computer and update the "switch"
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)"); // Check the screen size.
+    const mediaQuery = window.matchMedia('(max-width: 500px)'); // Check the screen size.
     setIsMobile(mediaQuery.matches); // Update the "switch" based on the screen size.
 
     const handleMediaQueryChange = (event) => { // Function to update the "switch" if the screen size changes.
@@ -70,10 +71,11 @@ const ComputersCanvas = () => {
       frameloop="demand" // Only update the canvas when something changes.
       shadows // Enable shadows in the scene. 
       dpr={[1, 2]} // Adjust the sharpness of the scene (higher number = sharper).
-      camera={{ position: [20, 3, 5], fov: 25 }} // Set the camera's position and viewing angle.
+      camera={{ position: [22, 10, 5], fov: 28 }} // Set the camera's position and viewing angle.
       gl={{ preserveDrawingBuffer: true }} // Allow us to take screenshots of the scene.
+      style={{ flex: 5 }}
     >
-      <Suspense fallback={<CanvasLoader />}> //  Show a loading screen while the scene is being loaded.
+      <Suspense fallback={<CanvasLoader />}> {/* Show a loading screen while the scene is being loaded.*/}
 
         {/* Add controls to move the camera around the scene. */}
         <OrbitControls
