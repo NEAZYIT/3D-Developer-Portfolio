@@ -78,10 +78,9 @@ const Hero = () => {
             🚀 Aspiring Sorcerer of Code, weaving spells in the realm of software development! 🧙‍♂️ 🌐 Junior Software Dev | Networking & DevOps Enthusiast | Lifelong ✨
           </p>
         </div>
-
-        <ComputersCanvas /> {/* This renders the 3DComputer canvas. */}
-
       </div>
+
+      <ComputersCanvas /> {/* This renders the 3DComputer canvas. */}
     </section>
   );
 };
