@@ -162,5 +162,35 @@ npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-
 **4. Result:**
 
 After fixing the issues and making these improvements, the 3D object now displays correctly! The black screen is gone, and users have a much better experience.
-
 ---
+
+
+###  2. Understanding 3D Models and Code
+
+**Need Help Understanding the 3D Code?**
+
+If you're new to 3D graphics and need help understanding some of the code, here's a helpful resource:
+
+- **React Three Fiber Documentation:** The official documentation for React Three Fiber is a great place to start! You can find explanations and examples for different components and concepts: [https://docs.pmnd.rs/react-three-fiber/getting-started/introduction](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) 
+    - **Example:**  If you see a line like `<hemisphereLight intensity={3.15} groundColor="black" />` and want to know what it does, you can search the documentation for "hemisphereLight" to learn more.
+
+**Where to Find 3D Models**
+
+To use 3D models in your projects, you need to find them first!  Here are some options:
+
+* **Traditional 3D Model Websites:** Websites like Sketchfab, TurboSquid, CGTrader, and Free3D offer a huge variety of 3D models for download.
+* **Sketchfab (Recommended):**  Sketchfab is a popular choice, and it might be a great place to start your search: [https://sketchfab.com/](https://sketchfab.com/)
+* **Create Your Own:** If you're feeling adventurous, you can create your own 3D models using software like Blender (free and open-source) or SketchUp.
+
+--- 
+
+## 2.  Problem: 3D Model Disappears on Refresh
+
+**Issue:**  After refreshing the browser, the 3D model loaded on the page would break and disappear, resulting in a black screen. 
+
+**Solution:**  A "Loader" component was implemented to handle the loading process of the 3D model. This acts as a visual cue during model loading, preventing the model from breaking upon page refresh.
+
+**Explanation:** 
+
+* **The Problem:**  When a webpage is refreshed, the browser needs to rebuild everything from scratch, including the 3D model. Without proper handling, this can cause the model to be incomplete or disappear.
+* **The Fix:**  The Loader component provides a visual indicator while the 3D model is being built. This prevents users from seeing a broken or incomplete model and provides a seamless experience. 

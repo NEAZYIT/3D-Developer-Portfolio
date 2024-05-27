@@ -12,10 +12,11 @@ const Computers = ({ isMobile }) => {
   const { scene } = useGLTF("/desktop_pc/scene.gltf"); // Load the 3D model from a file. 
 
   return (
-    <mesh> // Create a container for all the elements in our scene.
+    // Create a container for all the elements in our scene.
+    <mesh>
 
       {/* Add a soft, general light to the scene. */}
-      <hemisphereLight intensity={0.15} groundColor="black" />
+      <hemisphereLight intensity={3.15} groundColor="black" />
 
       {/* Add a focused spotlight to the scene. */}
       <spotLight
