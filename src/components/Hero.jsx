@@ -81,6 +81,46 @@ const Hero = () => {
       </div>
 
       <ComputersCanvas /> {/* This renders the 3DComputer canvas. */}
+
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+        {/* 
+              - This div is the main container for the animated button.
+              - It's positioned absolutely, meaning it sits on top of other content.
+              - xs:bottom-10 bottom-32 controls its distance from the bottom on different screen sizes.
+              - flex justify-center items-center centers the button horizontally and vertically.
+            */}
+        <a href="#about">
+          {/* 
+              - This <a> tag turns the button into a link to the section with the id "about".
+             */}
+          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            {/* 
+              - This div styles the outer part of the button.
+              - w-[35px] h-[64px] sets its width and height.
+              - rounded-3xl gives it rounded corners.
+              - border-4 border-secondary adds a border.
+              - flex justify-center items-start positions the inner circle at the top.
+              - p-2 adds some internal padding.
+             */}
+            <motion.div
+              animate={{ y: [0, 29, 0] }}
+              transition={{
+                duration: 1.9,
+                repeat: Infinity,
+                repeatType: 'loop'
+              }}
+              className="w-3 h-3 rounded-full bg-secondary mb-1"
+            >
+              {/* 
+              - This motion.div is the inner circle that animates.
+              - animate={{ y: [0, 29, 0] }} makes it move up and down 29 pixels.
+              - transition controls the animation speed, repetition, and type.
+              - className styles the circle with a specific size, shape, and color. 
+               */}
+            </motion.div>
+          </div>
+        </a>
+      </div>
     </section>
   );
 };
