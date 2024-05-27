@@ -10,6 +10,7 @@ This document provides a comprehensive overview of the development process for a
 | [2](#day-2-content-routing-and-integration) | Content, Routing, and Integration                            |
 | [3](#day-3-dynamic-navbar--responsiveness)  | Dynamic Navbar & Responsiveness                              |
 |       [4](#day-4-tailwind-css-fixes)        | Tailwind CSS Fixes and Hero Section Styling and Hero Section |
+|      [5](#day-5-3d-model-integration)       | 3D Model Integration                                         |
 |                     ...                     | ...                                                          |
 
 ---
@@ -137,4 +138,29 @@ npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-
     - Add hover effects and smooth transitions to the "NEAZYIT" text in the heading. 
 
 - **Importing Styles and Components:** The code imports the necessary styling from `../styles` and the `ComputersCanvas` component from `./canvas`.
+---
+
+### Day 5: 3D Model Integration <a id="day-5-3d-model-integration"></a>
+
+**1.  3D Object Display Issues**
+
+*  We ran into a problem where the 3D object wasn't showing up correctly. The website displayed a blank black screen instead. 
+*  The issue was caused by two things:
+    *  **Mixing HTML and 3D:** We tried to use regular HTML elements alongside the 3D object, which confused the website because they are rendered differently.  It's like trying to combine oil and water - they don't mix!
+    *  **Incorrect File Location:**  The website couldn't find the 3D object file where it was supposed to be. It's like looking for a book on your shelf but realizing it's on a completely different shelf.
+
+**2. Solutions** 
+
+*   **Removing Conflicting Elements:** We removed the regular HTML elements that were causing problems. This way, the website understands we're only working with 3D elements in this area.
+*   **Fixing File Location:**  We double-checked and fixed the location of the 3D object file. We made sure it was in the right place so the website could easily find it.
+
+**3. Enhancements for User Experience**
+
+*   **Adding a Loading Indicator:**  While the 3D object was loading, we added a little spinning icon so users know that something interesting is loading. It's like a progress bar for the 3D object.
+*   **Setting up the 3D Environment:**  We made sure the virtual space for the 3D object was set up correctly. This includes things like proper lighting and shadows, which help the 3D object look its best.
+
+**4. Result:**
+
+After fixing the issues and making these improvements, the 3D object now displays correctly! The black screen is gone, and users have a much better experience.
+
 ---
