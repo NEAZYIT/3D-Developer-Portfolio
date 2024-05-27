@@ -11,6 +11,9 @@ import { services } from "../constants";
 // services: A list of services that we offer, which will be displayed on the page.
 import { fadeIn, textVariant } from "../utils/motion";
 // fadeIn, textVariant: Pre-made animation blueprints from our "utils/motion" toolbox.
+import { SectionWrapper } from '../hoc';
+// This imports a special wrapper component from our "hoc" (Higher-Order Components) toolbox.
+// It helps us to wrap our components in a way that makes them more reusable and efficient.
 
 /**
  * Imagine this component as a digital photo frame to showcase each of our services.
@@ -70,8 +73,59 @@ const About = () => {
     <>
       {/*  "Introduction" heading with a cool animation effect */}
       <motion.div variants={textVariant()}>
+
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+
+        <motion.h2 // This is a motion component from the Framer Motion library. It's a h2 heading that has animation properties.
+          initial={{ x: -50, y: 0, opacity: 0 }} // The initial state of the component: it's slightly to the left (-50px on the x-axis), fully visible (opacity 1), and at its original position on the y-axis (0)
+          animate={{ x: 0, y: 0, opacity: 1 }} // The state the component will animate to: it will move to its original position on the x-axis (0), stay at its original position on the y-axis (0), and become fully visible (opacity 1).
+          transition={{ duration: 0.4 }} // The transition properties for the animation: it will last 0.4 seconds.
+          className={`${styles.sectionHeadText} font-bold text-5xl gradient-text`} // The CSS classes for the component: it uses the sectionHeadText class from the styles object, and also has the font-bold, text-5xl, and gradient-text classes.
+        >
+          Overview.
+        </motion.h2>
+
+        {/* The CSS for the component. */}
+        <style jsx>{`
+            /* The gradient-text class gives the text a gradient background that animates over time. */
+            .gradient-text {
+              /* The background is a linear gradient that goes from blue to red. */
+              background: linear-gradient(270deg, blue, red);
+              /* The size of the background image is 400% of the size of the element, to allow for the animation. */
+              background-size: 400% 400%;
+              /* These properties clip the background to the text and make the text transparent, so the background shows through. */
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              /* This animation changes the position of the background over time, creating the gradient animation effect. */
+              animation: gradient-animation 5s ease infinite;
+            }
+
+            /* The keyframes for the gradient-animation. */
+            @keyframes gradient-animation {
+              /* At the start of the animation, the background is at the left edge of the element. */
+              0% {
+                background-position: 0% 50%;
+              }
+              /* Halfway through the animation, the background is at the right edge of the element. */
+              50% {
+                background-position: 100% 50%;
+              }
+              /* At the end of the animation, the background is back at the left edge of the element. */
+              100% {
+                background-position: 0% 50%;
+              }
+            }
+
+            /* The hover state for the gradient-text class. */
+            .gradient-text:hover {
+              /* On hover, the text becomes semi-transparent white and the background becomes semi-transparent black. */
+              color: rgba(255, 255, 255, 0.5);
+              background-color: rgba(0, 0, 0, 0.2);
+              /* The background is still clipped to the text. */
+              -webkit-background-clip: text;
+            }
+        `}</style>
+
       </motion.div>
 
       {/* A paragraph introducing us in more detail, also animated for a better visual impact */}
@@ -125,4 +179,6 @@ const About = () => {
 }
 
 // This line exports the About component so it can be used in other parts of the website.
-export default About; 
+// It takes two parameters: the component to be wrapped (About) and the name of the section (about).
+// The SectionWrapper component is a higher-order component that wraps the About component with a motion.div and other styling.
+export default SectionWrapper(About, "about");

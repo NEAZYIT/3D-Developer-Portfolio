@@ -230,3 +230,18 @@ To use 3D models in your projects, you need to find them first!  Here are some o
     * **Color Palette:** I experimented with different color combinations for the background, text, and service card frames to create a more harmonious and visually appealing color scheme.
     * **Typography:** I chose a different font and adjusted font sizes to improve readability and match the overall website's style. 
     * **Visual Hierarchy:** By making subtle changes to font sizes, colors, and spacing, I aimed to create a clear visual hierarchy - guiding the user's eye to the most important information first (like the heading) and then to the supporting details.
+---
+
+## 6.  Implementing a Reusable Section Wrapper and Adding Animated Gradient Text 
+
+**Notes:**
+
+* **Created Reusable `SectionWrapper` Component:** 
+    - Developed a Higher-Order Component (HOC) called `SectionWrapper` to encapsulate common styling and animation logic for website sections. This promotes code reusability and consistency across different parts of the website. 
+    - The `SectionWrapper` applies smooth fade-in animations using Framer Motion, enhancing the visual appeal as users navigate the site. 
+    - It also assigns unique IDs to sections, simplifying internal linking and page navigation. 
+
+* **Added Animated Gradient to "Overview" Heading:** 
+    - Incorporated an animated color gradient to the "Overview" heading in the "About" section.
+    - The gradient smoothly transitions between blue and red, creating a visually engaging effect.
+    - Added a subtle hover effect to the heading, making it slightly brighter and adding a semi-transparent dark background on mouseover.
