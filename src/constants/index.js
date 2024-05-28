@@ -29,6 +29,9 @@ import {
   docker,
   router,
   sw,
+  linux,
+  win,
+  c,
   meta,
   starbucks,
   tesla,
@@ -99,16 +102,16 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "C",
+    icon: c,
   },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Linux",
+    icon: linux,
   },
   {
     name: "Tailwind CSS",
@@ -119,8 +122,8 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Windows",
+    icon: win,
   },
   {
     name: "Three JS",

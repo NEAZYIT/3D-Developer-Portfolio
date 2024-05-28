@@ -26,6 +26,10 @@ import threejs from "./tech/threejs.svg";
 import router from "./tech/rt.png";
 import sw from "./tech/sw.png";
 import meta from "./company/meta.png";
+import linux from "./tech/linux.png";
+import win from "./tech/win.png";
+import c from "./tech/c.png";
+
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
@@ -64,6 +68,9 @@ export {
   threejs,
   router,
   sw,
+  linux,
+  win,
+  c,
   meta,
   shopify,
   starbucks,
