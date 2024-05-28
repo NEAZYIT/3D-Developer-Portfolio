@@ -64,10 +64,10 @@ const ExperienceCard = ({ experience }) => (
     <ul className="mt-5 list-disc ml-5 space-y-2">
       {experience.points.map((point, index) => (
         <li
-          key={'experience-point-${index}'} // Unique key for each list item
-          className="text-white-100 text-[14px] pl-1 tracking-wider" // Style for the list items
+          key={'experience-point-${index}'}
+          className="text-white-100 text-[14px] pl-1 tracking-wider"
         >
-          {point} // Display the key point text
+          {point}
         </li>))}
     </ul>
   </VerticalTimelineElement>
@@ -100,14 +100,8 @@ const Experience = () => {
       </motion.div>
 
       <div className="mt-20 flex flex-col">
-        {/* This is a container that holds the timeline and centers it on the page. */}
-
         <VerticalTimeline>
-          {/* This loop iterates over the user's work experiences, stored in the 'experiences' array. */}
-
           {experiences.map((experience, index) => (
-            // For each experience, it renders an 'ExperienceCard' component, which is responsible for displaying the details of each work experience.
-            // Each card gets a unique 'key' attribute for React to identify it properly.
             <ExperienceCard key={index} experience={experience} />
           ))}
 
