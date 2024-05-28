@@ -74,7 +74,9 @@ const About = () => {
       {/*  "Introduction" heading with a cool animation effect */}
       <motion.div variants={textVariant()}>
 
-        <p className={styles.sectionSubText}>Introduction</p>
+        <p className={`${styles.sectionSubText} relative cursor-pointer group inline-block`}>Introduction
+          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-700 transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 group-hover:duration-300"></span>
+        </p>
 
         <motion.h2 // This is a motion component from the Framer Motion library. It's a h2 heading that has animation properties.
           initial={{ x: -50, y: 0, opacity: 0 }} // The initial state of the component: it's slightly to the left (-50px on the x-axis), fully visible (opacity 1), and at its original position on the y-axis (0)

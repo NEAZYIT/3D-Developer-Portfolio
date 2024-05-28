@@ -4,6 +4,18 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      animation: {
+        gradient: "gradient 5s ease infinite",
+      },
+      keyframes: {
+        gradient: {
+          "0%, 100%": { "background-position": "0% 50%" },
+          "50%": { "background-position": "100% 50%" },
+        },
+      },
+      backgroundSize: {
+        "size-200": "200% 200%",
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",

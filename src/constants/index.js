@@ -11,14 +11,14 @@
  * This data is likely used by a frontend framework like React to render various components on the website.
  */
 import {
-  mobile,
-  backend,
-  creator,
   web,
   javascript,
   typescript,
   html,
   css,
+  network,
+  sysadmin,
+  devops,
   reactjs,
   redux,
   tailwind,
@@ -27,10 +27,15 @@ import {
   git,
   figma,
   docker,
+  router,
+  sw,
   meta,
   starbucks,
   tesla,
   shopify,
+  alx,
+  ista,
+  yazaki,
   carrent,
   jobit,
   tripguide,
@@ -64,16 +69,16 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Network Administrator",
+    icon: network,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "System Administrator",
+    icon: sysadmin,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "DevOps Enginee",
+    icon: devops,
   },
 ];
 
@@ -132,6 +137,14 @@ const technologies = [
   {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "Router",
+    icon: router,
+  },
+  {
+    name: "Switch",
+    icon: sw,
   },
 ];
 
