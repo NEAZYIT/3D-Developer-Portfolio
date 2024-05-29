@@ -231,26 +231,26 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+      "Nazih's expertise and attention to detail significantly enhanced our online platform, exceeding our highest expectations.",
+    name: "Emily Johnson",
+    designation: "Head of Digital Marketing",
+    company: "XYZ Corporation",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
+      "I've never seen such dedication and professionalism in a web developer like Nazih. Their commitment to our success is unmatched.",
+    name: "David Garcia",
     designation: "COO",
-    company: "DEF Corp",
+    company: "GHI Corporation",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      "Nach Nazih hat unsere Website optimiert, und das Ergebnis hat unsere Erwartungen weit übertroffen. Wir sind begeistert von ihrer Professionalität und Leidenschaft!",
+    name: "Lisa Müller",
+    designation: "Geschäftsführer",
+    company: "123 GmbH",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
