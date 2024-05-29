@@ -40,6 +40,9 @@ import yazaki from "./company/yazaki.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import shell from "./shell.png";
+import wetterio from "./wetterio.png";
+import prog from "./prog.png";
 
 export {
   logo,
@@ -81,4 +84,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  wetterio,
+  shell,
+  prog,
 };

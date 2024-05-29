@@ -43,6 +43,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  wetterio,
+  shell,
+  prog,
 } from "../assets";
 
 // This section defines the navigation links for the website.
@@ -257,67 +260,59 @@ const testimonials = [
 // For example, the first project is called "Car Rent" and it is a web-based platform for booking car rentals.
 const projects = [
   {
-    name: "Car Rent",
+    name: "Simple Shell",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Simple Unix shell developed using C language for executing command-line operations efficiently.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "C language",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: shell,
+    source_code_link: "https://github.com/nadaAit11/simple_shell",
   },
   {
-    name: "Job IT",
+    name: "Wetterio",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Wetter.io is the ultimate weather website designed for weather enthusiasts. Harnessing the power of HTML, CSS, and JavaScript, Wetter.io offers precise weather forecasting with a user-friendly interface. Our state-of-the-art application seamlessly blends functionality, innovation, and intuitive design to elevate your meteorological experience.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "html",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
+        name: "Javascript",
         color: "green-text-gradient",
       },
       {
         name: "css",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: wetterio,
+    source_code_link: "https://github.com/NEAZYIT/Wetterio",
+  },
+  {
+    name: "Tech Alchemist: Crafting Solutions in C, Python, JS, & DevOps",
+    description:
+      "Proficient in problem-solving across a spectrum of technologies, including C, Python, and JavaScript, alongside adept usage of various DevOps tools. With a passion for tackling challenges, I leverage these diverse skill sets to engineer effective solutions and streamline processes.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "C",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: prog,
+    source_code_link: "https://github.com/NEAZYIT",
   },
 ];
 
