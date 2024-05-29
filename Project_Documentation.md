@@ -4,15 +4,16 @@ This document provides a comprehensive overview of the development process for a
 
 **Table of Contents**
 
-|                                          Day                                          | Description                                                                 |
-| :-----------------------------------------------------------------------------------: | :-------------------------------------------------------------------------- |
-|                         [1](#day-1-project-setup-and-tooling)                         | Project Setup and Tooling                                                   |
-|                      [2](#day-2-content-routing-and-integration)                      | Content, Routing, and Integration                                           |
-|                      [3](#day-3-dynamic-navbar--responsiveness)                       | Dynamic Navbar & Responsiveness                                             |
-|                            [4](#day-4-tailwind-css-fixes)                             | Tailwind CSS Fixes and Hero Section Styling                                 |
+| Day                                                                                   | Description                                                                 |
+| ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| [1](#day-1-project-setup-and-tooling)                                                 | Project Setup and Tooling                                                   |
+| [2](#day-2-content-routing-and-integration)                                           | Content, Routing, and Integration                                           |
+| [3](#day-3-dynamic-navbar--responsiveness)                                            | Dynamic Navbar & Responsiveness                                             |
+| [4](#day-4-tailwind-css-fixes)                                                        | Tailwind CSS Fixes and Hero Section Styling                                 |
 | [5](#day-5-enhancing-user-experience-with-3d-models-animations-and-responsive-design) | Enhancing User Experience with 3D Models, Animations, and Responsive Design |
-|                          [6](#day-6-new-feature-development)                          | New Feature Development (Upcoming)                                          |
-|                                          ...                                          | ...                                                                         |
+| [6](#day-6-showcasing-skills-and-experience-with-dynamic-visuals)                     | Showcasing Skills and Experience with Dynamic Visuals                       |
+| [7](#day-7-...)                                                                       | ....                                                                        |
+| ...                                                                                   | ...                                                                         |
 
 
 ---
@@ -142,7 +143,7 @@ npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-
 - **Importing Styles and Components:** The code imports the necessary styling from `../styles` and the `ComputersCanvas` component from `./canvas`.
 ---
 
-### Day 5: Enhancing User Experience with 3D Models, Animations, and Responsive Design <a id="day-5-enhancing-user-experience-with-3d-models-animations-and-responsive-design"></a>
+## Day 5: Enhancing User Experience with 3D Models, Animations, and Responsive Design <a id="day-5-enhancing-user-experience-with-3d-models-animations-and-responsive-design"></a>
 
 ### 1.  3D Object Display Issues
 
@@ -160,8 +161,6 @@ npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-
 
 *   **Adding a Loading Indicator:**  While the 3D object was loading, I added a little spinning icon so users know that something interesting is loading. It's like a progress bar for the 3D object.
 *   **Setting up the 3D Environment:**  I made sure the virtual space for the 3D object was set up correctly. This includes things like proper lighting and shadows, which help the 3D object look its best.
----
-
 
 ###  2. Understanding 3D Models and Code
 
@@ -180,9 +179,7 @@ To use 3D models in your projects, you need to find them first!  Here are some o
 * **Sketchfab (Recommended):**  Sketchfab is a popular choice, and it might be a great place to start your search: [https://sketchfab.com/](https://sketchfab.com/)
 * **Create Your Own:** If you're feeling adventurous, you can create your own 3D models using software like Blender (free and open-source) or SketchUp.
 
---- 
-
-## 3.  Problem: 3D Model Disappears on Refresh
+### 3.  Problem: 3D Model Disappears on Refresh
 
 **Issue:**  After refreshing the browser, the 3D model loaded on the page would break and disappear, resulting in a black screen. 
 
@@ -193,9 +190,7 @@ To use 3D models in your projects, you need to find them first!  Here are some o
 * **The Problem:**  When a webpage is refreshed, the browser needs to rebuild everything from scratch, including the 3D model. Without proper handling, this can cause the model to be incomplete or disappear.
 * **The Fix:**  The Loader component provides a visual indicator while the 3D model is being built. This prevents users from seeing a broken or incomplete model and provides a seamless experience. 
 
----
-
-## 4. Implement Animated 'Back to Top' Button with Smooth Scrolling
+### 4. Implement Animated 'Back to Top' Button with Smooth Scrolling
 
 **Notes:**
 
@@ -216,9 +211,8 @@ To use 3D models in your projects, you need to find them first!  Here are some o
 * **User Experience:**
     * The button provides a quick and convenient way for users to navigate back to the top of the page, improving overall site navigation.
     * The animation adds a touch of visual interest and guides the user's attention to the button. 
----
 
-## 5. Refining the 'About' Section Layout and Design 
+### 5. Refining the 'About' Section Layout and Design 
 
 **Notes:**
 
@@ -232,9 +226,8 @@ To use 3D models in your projects, you need to find them first!  Here are some o
     * **Color Palette:** I experimented with different color combinations for the background, text, and service card frames to create a more harmonious and visually appealing color scheme.
     * **Typography:** I chose a different font and adjusted font sizes to improve readability and match the overall website's style. 
     * **Visual Hierarchy:** By making subtle changes to font sizes, colors, and spacing, I aimed to create a clear visual hierarchy - guiding the user's eye to the most important information first (like the heading) and then to the supporting details.
----
 
-## 6.  Implementing a Reusable Section Wrapper and Adding Animated Gradient Text 
+### 6.  Implementing a Reusable Section Wrapper and Adding Animated Gradient Text 
 
 **Notes:**
 
@@ -249,4 +242,41 @@ To use 3D models in your projects, you need to find them first!  Here are some o
     - Added a subtle hover effect to the heading, making it slightly brighter and adding a semi-transparent dark background on mouseover.
 ---
 
-### Day 6: New Feature Development (Upcoming) <a id="day-6-new-feature-development"></a>
+## Day 6: Showcasing Skills and Experience with Dynamic Visuals <a id="day-6-showcasing-skills-and-experience-with-dynamic-visuals"></a>
+
+### 1.  New Assets and Visual Refresh
+
+* **Asset Integration:**  Successfully searched for and imported new assets (3D models, images, etc.) that will be used to enhance the visual appeal and interactivity of the portfolio.
+* **Text Style Update:** Revamped the styling of heading and subheading text to align with the overall design aesthetic, improving readability and visual hierarchy.
+
+### 2.  Experience Timeline: Visualizing My Journey
+
+* **Vertical Timeline Implementation:**  Created a visually engaging vertical timeline that showcases my work history and achievements. This timeline features:
+    * **Interactive Cards:** Each milestone on the timeline is represented by a card that expands on hover, providing more details about the project or achievement.
+    * **Dynamic Styling:** Implemented custom styling for the vertical line and cards to ensure a cohesive and visually appealing presentation.
+
+### 3.  3D Skills Sphere: An Interactive Representation
+
+* **3D Skill Visualization:** Designed and developed an interactive 3D sphere that displays 15 of my core skills. 
+    * Each skill is represented by a visually distinct element on the sphere, allowing users to explore my skillset in an engaging way.
+
+### 4.  Dynamic Project Showcases: Bringing Projects to Life
+
+* **Dynamic Project Section:**  Built a dedicated section to showcase featured projects dynamically.
+    * **Interactive Cards:**  This section uses interactive cards to present 3 featured projects. Users can interact with these cards to reveal more information.
+
+### 5.  Testimonial Section: Building Credibility and Trust
+
+* **Testimonial Section Design:**  Created a visually appealing section to display client testimonials.
+    * **User-Friendly Layout:** The section is designed to highlight positive feedback and build trust with potential clients or employers.
+
+### 6. Challenges and Solutions
+
+* **Challenge:** Integrating the 3D skills sphere into the website while maintaining optimal performance. Large 3D models can impact loading times and smoothness.
+    * **Solution:** Optimized the 3D model used for the skills sphere. This involved reducing polygon count, simplifying textures, and potentially pre-loading the model to ensure a seamless user experience. 
+
+* **Challenge:** Creating smooth and intuitive interactions for the vertical timeline and project showcase cards.
+    * **Solution:** Utilized a combination of CSS transitions and potentially a JavaScript library like Framer Motion to create refined hover effects, transitions, and animations for a user-friendly experience.
+--- 
+
+## Day 7: <a id="day-7-..."></a>
