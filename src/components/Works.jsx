@@ -85,10 +85,10 @@ const Works = () => {
       {/* Animated elements for the Experience section */}
       <motion.div variants={textVariant()}>
         {/* Subtitle for the Experience section */}
-        <p className={`${styles.sectionSubText} relative cursor-pointer group inline-block`}>
+        <p className={`${styles.sectionSubText}  cursor-pointer group inline-block relative z-10`}>
           Meine Arbeit {/* Displaying the subtitle */}
           {/* Subtle underline effect on hover */}
-          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-700 transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 group-hover:duration-300"></span>
+          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-secondary to-tertiary transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 group-hover:duration-300"></span>
         </p>
 
         {/* Animated heading for the Experience section */}

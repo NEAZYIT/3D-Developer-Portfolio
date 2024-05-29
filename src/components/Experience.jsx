@@ -82,8 +82,9 @@ const Experience = () => {
       <motion.div variants={textVariant()}>
         {/* This is a paragraph element that displays the subtitle of the Experience section. 
             It has a subtle underline effect that appears on hover. */}
-        <p className={`${styles.sectionSubText} relative cursor-pointer group inline-block`}>What I've Achieved So Far
-          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gray-700 transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 group-hover:duration-300"></span>
+        <p className={`${styles.sectionSubText}  cursor-pointer group inline-block relative z-10`}>
+          What I've Achieved So Far
+          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-gradient-to-r from-secondary to-tertiary transform scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100 group-hover:duration-300"></span>
         </p>
 
         {/* This is a motion component from the Framer Motion library that creates an animated heading for the Experience section.
