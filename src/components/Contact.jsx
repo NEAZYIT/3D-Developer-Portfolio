@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser'; // Imports the `emailjs` library for sen
 import { styles } from '../styles'; // Imports styling rules from a separate file.
 import { SectionWrapper } from '../hoc'; // Imports a higher-order component (HOC) for wrapping the `Contact` component.
 import { slideIn } from '../utils/motion'; // Imports an animation function from a utility file.
+import { EarthCanvas } from "./canvas";
 
 const Contact = () => {
   // Creates a ref to access the form element directly.
@@ -152,6 +153,14 @@ const Contact = () => {
           </form>
         )}
       </motion.div>
+
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)} // Animation variants for sliding in from the right with a tween effect and duration of 0.2 seconds
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]' // CSS classes defining the dimensions of the div based on screen size breakpoints
+      >
+        <EarthCanvas /> {/* Renders the EarthCanvas component inside the motion.div */}
+      </motion.div>
+
     </div>
   );
 };

@@ -93,10 +93,6 @@ const services = [
 // For example, the first technology has a name of "HTML 5" and an icon of "html".
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
     name: "CSS 3",
     icon: css,
   },

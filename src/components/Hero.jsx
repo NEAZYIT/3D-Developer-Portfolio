@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'; // Library for creating cool animations
 
 import { styles } from '../styles'; // Import our website's styling from the styles file
-import { ComputersCanvas } from './canvas'; // This imports a 3D computercanvas
 
 // This is the main Hero component. It renders the Hero section of our website.
 
@@ -50,37 +49,40 @@ const Hero = () => {
           {/* This is the vertical gradient line. */}
         </div>
 
-        <div>
+        <div className="text-center py-12">
           {/* This div holds the main heading and paragraph text. */}
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white text-5xl font-bold mb-6`}>
             {/* 
               This is the main heading.
               - styles.heroHeadText: Applies heading styles from our styles file.
-              - text-white:  Makes the text white.
+              - text-white: Makes the text white.
+              - text-5xl: Increases the font size to extra large.
+              - font-bold: Applies a bold font weight.
+              - mb-6: Adds some bottom margin for separation.
             */}
-            Yo, It's me <span className="text-[#401d8d]  transition duration-700 ease-in-out hover:text-red-800">NEAZYIT</span>
+            Yo, It's me <span className="text-purple-700 transition duration-500 ease-in-out hover:text-red-500">NEAZYIT</span>
             {/* 
               This is the "NEAZYIT" part, which has a purple color.
-              - text-[#401d8d]: Sets the initial purple color. 
-              - transition:  Makes color changes smooth.
-              - duration-300: Sets the transition time to 0.3 seconds.
-              - ease-in-out:  Specifies the transition speed curve.
-              - hover:text-purple-800: Changes the color to a darker purple on hover.
+              - text-purple-700: Sets the initial purple color.
+              - transition: Makes color changes smooth.
+              - duration-500: Sets the transition time to 0.5 seconds.
+              - ease-in-out: Specifies the transition speed curve.
+              - hover:text-red-500: Changes the color to red on hover.
             */}
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} text-white text-lg mb-8`}>
             {/* 
               This is the paragraph text below the main heading.
               - styles.heroSubText: Applies paragraph styles from our styles file.
-              - mt-2: Adds some top margin.
-              - text-white-100:  Makes the text white. 
+              - text-white: Makes the text white.
+              - text-lg: Increases the font size to large.
+              - mb-8: Adds some bottom margin for separation.
             */}
             🚀 Aspiring Sorcerer of Code, weaving spells in the realm of software development! 🧙‍♂️ 🌐 Junior Software Dev | Networking & DevOps Enthusiast | Lifelong ✨
           </p>
         </div>
-      </div>
 
-      <ComputersCanvas /> {/* This renders the 3DComputer canvas. */}
+      </div>
 
       {/* This div is the main container for the animated button. */}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

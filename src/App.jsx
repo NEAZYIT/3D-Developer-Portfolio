@@ -21,7 +21,7 @@ const App = () => {
   return (
     <BrowserRouter>  {/* Wraps the entire app with the BrowserRouter component, enabling navigation between different routes. */}
       <div className="relative z-0 bg-primary"> {/* The main container of the website, with a relative positioning, z-index of 0, and a background color defined by the 'primary' class. */}
-      
+
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center"> {/* This div contains the hero section of the website, with a background image defined by the 'hero-pattern' class, covering the entire area, not repeating, and centered. */}
           <Navbar /> {/* Renders the Navbar component, which likely contains the navigation links for the website. */}
           <Hero /> {/* Renders the Hero component, which likely contains the main introductory content of the website. */}
