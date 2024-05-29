@@ -48,7 +48,8 @@ const Contact = () => {
 
     try {
       // Sends the email using the `emailjs.send` function.
-      await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form, 'YOUR_USER_ID');
+      // Ensure emailjs configuration includes required parameters: serviceid, templateid, userpublickey
+      await emailjs.send('service_xdndvu8', 'template_vv08q4d', form, 'Zko2NEFSukKkkfaXb');
 
       // Updates the state to reflect successful submission.
       setSubmitted(true);

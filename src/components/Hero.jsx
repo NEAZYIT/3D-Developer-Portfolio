@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'; // Library for creating cool animations
 import { styles } from '../styles'; // Import our website's styling from the styles file
 
 // This is the main Hero component. It renders the Hero section of our website.
-
 const Hero = () => {
   // This is the main function that creates the "Hero" section of our website.
   // The Hero section is usually the big, attention-grabbing part at the top. 
@@ -42,7 +41,7 @@ const Hero = () => {
             - items-center: Centers items horizontally.
             - mt-5: Adds some top margin.
           */}
-          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+          <div className="w-5 h-5 rounded-full bg-[#5025bd]" />
           {/* This is the small purple circle. */}
 
           <div className="w-1 h-40 sm:h-80 rounded-full violet-gradient" />
@@ -80,6 +79,12 @@ const Hero = () => {
             */}
             🚀 Aspiring Sorcerer of Code, weaving spells in the realm of software development! 🧙‍♂️ 🌐 Junior Software Dev | Networking & DevOps Enthusiast | Lifelong ✨
           </p>
+        </div>
+
+        {/* Right Side Elements*/}
+        <div className="flex flex-col justify-center items-center mt-5">
+          <div className="w-5 h-5 rounded-full bg-[#5025bd]" />
+          <div className="w-1 h-40 sm:h-80 rounded-full violet-gradient" />
         </div>
 
       </div>
